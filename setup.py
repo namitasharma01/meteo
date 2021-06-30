@@ -11,6 +11,6 @@ setup(
     url='http://www.nowebsite.com',
     license='LICENSE.txt',
     description='Meteorological library.',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
 )
 
