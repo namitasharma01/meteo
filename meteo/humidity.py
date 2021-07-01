@@ -70,3 +70,9 @@ def rh2ah(RH,p,T):
     sh=mixr2sh(mixr)
     return  sh*rhov(T,p,sh) 
 
+def rhov(T,p,sh=0.):
+    '''purpose: calculate the density from pressure temperature and specific humidity'''
+    R = Rd*(1.-sh) + Rv*sh
+    return p/R/T
+
+
